@@ -24,7 +24,7 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as='h3'>${product.price}</Card.Text>
+        <Card.Text as='h3'>₹ {Number(parseFloat(product.price).toFixed(2)).toLocaleString('en-IN')}</Card.Text>
       </Card.Body>
     </Card>
   )
